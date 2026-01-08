@@ -11,9 +11,7 @@ ADD https://downloads.wordpress.org/plugin/sqlite-database-integration.zip /tmp/
 RUN unzip /tmp/sqlite.zip -d /var/www/html/wp-content/plugins \
     && rm /tmp/sqlite.zip
 
-# Enable SQLite drop-in
-RUN cp /var/www/html/wp-content/plugins/sqlite-database-integration/db.php \
-       /var/www/html/wp-content/db.php
+# Enable SQLite drop-in (handle folder name safely)
+RUN find /var/www/html/wp-content/plugins -name db.php -exec cp {} /var/www/html/wp-content/db.php \;
 
 COPY wp-config.php /var/www/html/wp-config.php
-
