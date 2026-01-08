@@ -5,62 +5,132 @@
   <title>Transport Booking Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Tailwind CDN -->
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
+<body class="bg-white text-gray-800">
 
-  <!-- Header -->
-  <header class="bg-blue-600 text-white p-4">
-    <h1 class="text-xl font-bold">Transport Booking</h1>
+  <!-- NAVBAR -->
+  <header class="bg-black text-white">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="text-xl font-bold">
+        TRANSPORT<span class="text-red-500">DEMO</span>
+      </div>
+
+      <nav class="space-x-6 text-sm hidden md:block">
+        <a href="#" class="hover:text-red-500">Home</a>
+        <a href="trips.html" class="hover:text-red-500">Book a Trip</a>
+        <a href="#" class="hover:text-red-500">Manage Booking</a>
+        <a href="#" class="hover:text-red-500">Contact</a>
+        <a href="#" class="hover:text-red-500">Login</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Main -->
-  <main class="max-w-xl mx-auto mt-10 bg-white p-6 rounded shadow">
-
-    <h2 class="text-lg font-semibold mb-4">Book a Trip</h2>
-
-    <form action="trips.html" method="GET" class="space-y-4">
-
-      <!-- From -->
+  <!-- HERO -->
+  <section class="bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+      
+      <!-- Text -->
       <div>
-        <label class="block text-sm font-medium mb-1">From</label>
-        <select name="from" class="w-full border rounded px-3 py-2">
-          <option>Abuja</option>
-          <option>Lagos</option>
-          <option>Benin</option>
-          <option>Jos</option>
-        </select>
+        <h1 class="text-4xl font-bold mb-4 leading-tight">
+          Book Safe & Reliable Intercity Travel
+        </h1>
+        <p class="text-gray-600 mb-6">
+          Travel comfortably across major cities with professional drivers,
+          modern vehicles, and easy online booking.
+        </p>
+
+        <div class="flex gap-4">
+          <a
+            href="trips.html"
+            class="bg-red-600 text-white px-6 py-3 rounded hover:bg-red-700"
+          >
+            Book a Trip
+          </a>
+
+          <a
+            href="#"
+            class="border border-gray-400 px-6 py-3 rounded hover:bg-gray-200"
+          >
+            Manage Booking
+          </a>
+        </div>
       </div>
 
-      <!-- To -->
-      <div>
-        <label class="block text-sm font-medium mb-1">To</label>
-        <select name="to" class="w-full border rounded px-3 py-2">
-          <option>Lagos</option>
-          <option>Abuja</option>
-          <option>Benin</option>
-          <option>Kaduna</option>
-        </select>
+      <!-- Image Placeholder -->
+      <div class="bg-white shadow rounded p-6 text-center">
+        <p class="text-gray-500 text-sm mb-2">PROMO BANNER</p>
+        <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">
+          Vehicle / Promo Image
+        </div>
+        <p class="mt-4 text-sm text-gray-600">
+          Regular • Executive • Premium
+        </p>
       </div>
 
-      <!-- Date -->
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-8">
+    <div class="text-center">
+      <h3 class="font-semibold mb-2">Online Booking</h3>
+      <p class="text-sm text-gray-600">
+        Book your seat anytime from anywhere.
+      </p>
+    </div>
+    <div class="text-center">
+      <h3 class="font-semibold mb-2">Comfort & Safety</h3>
+      <p class="text-sm text-gray-600">
+        Clean vehicles and trained drivers.
+      </p>
+    </div>
+    <div class="text-center">
+      <h3 class="font-semibold mb-2">Multiple Routes</h3>
+      <p class="text-sm text-gray-600">
+        Travel across major cities nationwide.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 text-sm">
+    <div class="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-4 gap-8">
       <div>
-        <label class="block text-sm font-medium mb-1">Travel Date</label>
-        <input type="date" name="date" class="w-full border rounded px-3 py-2" />
+        <h4 class="font-semibold mb-2 text-white">Transport Demo</h4>
+        <p>
+          Reliable intercity transport services with modern booking experience.
+        </p>
       </div>
 
-      <!-- Submit -->
-      <button
-        type="submit"
-        class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
-      >
-        Search Trips
-      </button>
+      <div>
+        <h4 class="font-semibold mb-2 text-white">Quick Links</h4>
+        <ul class="space-y-1">
+          <li><a href="trips.html" class="hover:underline">Book a Trip</a></li>
+          <li><a href="#" class="hover:underline">Manage Booking</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
 
-    </form>
-  </main>
+      <div>
+        <h4 class="font-semibold mb-2 text-white">Offices</h4>
+        <p>Abuja</p>
+        <p>Lagos</p>
+        <p>Jos</p>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-2 text-white">Support</h4>
+        <p>support@demo.com</p>
+        <p>+234 800 000 0000</p>
+      </div>
+    </div>
+
+    <div class="text-center py-4 border-t border-gray-700">
+      © 2026 Transport Demo. All rights reserved.
+    </div>
+  </footer>
 
 </body>
 </html>
-
