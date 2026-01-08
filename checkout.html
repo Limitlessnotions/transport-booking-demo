@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4">
+    <h1 class="text-xl font-bold">Checkout</h1>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-xl mx-auto mt-6 bg-white p-6 rounded shadow">
+
+    <h2 class="text-lg font-semibold mb-4">Passenger Details</h2>
+
+    <form action="success.html" method="GET" class="space-y-4">
+
+      <!-- Name -->
+      <div>
+        <label class="block text-sm font-medium mb-1">Full Name</label>
+        <input
+          type="text"
+          placeholder="John Doe"
+          class="w-full border rounded px-3 py-2"
+          required
+        />
+      </div>
+
+      <!-- Phone -->
+      <div>
+        <label class="block text-sm font-medium mb-1">Phone Number</label>
+        <input
+          type="tel"
+          placeholder="08012345678"
+          class="w-full border rounded px-3 py-2"
+          required
+        />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="block text-sm font-medium mb-1">Email Address</label>
+        <input
+          type="email"
+          placeholder="email@example.com"
+          class="w-full border rounded px-3 py-2"
+          required
+        />
+      </div>
+
+      <!-- Summary -->
+      <div class="bg-gray-50 p-4 rounded text-sm">
+        <p><strong>Route:</strong> Abuja → Lagos</p>
+        <p><strong>Seat:</strong> Selected Seat</p>
+        <p><strong>Amount:</strong> ₦25,000</p>
+      </div>
+
+      <!-- Submit -->
+      <button
+        type="submit"
+        class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+      >
+        Confirm Booking
+      </button>
+
+    </form>
+
+  </main>
+
+</body>
+</html>
 
